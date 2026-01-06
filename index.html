@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Akshith Inavolu — Portfolio</title>
+  <meta name="description" content="Akshith Inavolu — Software Developer | Java | Python | Web Developer | ML & CV Enthusiast" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/a2d9b6b9c2.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Small inline script to swap no-js -> js early for safe reveal behavior -->
+  <script>document.documentElement.className = document.documentElement.className.replace('no-js','js');</script>
+</head>
+<body>
+
+  <!-- THEME TOGGLE -->
+  <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="nav container">
+      <a class="brand" href="#hero">Akshith<span class="dot">.</span></a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button id="hamburger" class="hamburger" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-layers" aria-hidden="true">
+        <div class="blur-blob blob-1"></div>
+        <div class="blur-blob blob-2"></div>
+        <div id="spotlight" class="spotlight"></div>
+        <canvas id="pcanvas" class="particles"></canvas>
+      </div>
+
+      <div class="hero-inner container">
+        <div class="hero-left">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1 class="hero-title">Akshith <span class="accent">Inavolu</span></h1>
+          <div id="typewriter" class="typewriter" aria-live="polite">Software Developer</div>
+          <p class="lead">Software Developer skilled in Java, Python, Data Structures, OOP, backend logic, APIs, debugging, clean code, modular design.</p>
+
+          <div class="cta-row">
+            <a href="Akshith_Inavolu_Resume.pdf" class="btn primary" download>Download Resume</a>
+            <a href="#contact" class="btn ghost">Contact Me</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="num" data-target="2">0</div>
+              <div class="label">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="num" data-target="1">0</div>
+              <div class="label">Internship</div>
+            </div>
+            <div class="stat">
+              <div class="num" data-target="1">0</div>
+              <div class="label">Research</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-right">
+          <div class="profile-card" id="profileCard" tabindex="0" aria-label="Profile card">
+            <div class="profile-photo">
+              <img src="https://th.bing.com/th/id/OIP.YoTUWMoKovQT0gCYOYMwzwHaHa?w=202&h=202&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Akshith Inavolu">
+              <div class="photo-glow"></div>
+            </div>
+            <div class="profile-info">
+              <h3>Akshith Inavolu</h3>
+              <p class="muted">Software Developer • ML & CV Enthusiast</p>
+              <div class="socials">
+                <a href="https://linkedin.com/in/akshithinavolu" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/akshithinavolu" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:akshithinavolu@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-bubbles" aria-hidden="true">
+            <span style="--i:0">Python</span>
+            <span style="--i:1">Java</span>
+            <span style="--i:2">TensorFlow</span>
+            <span style="--i:3">OpenCV</span>
+            <span style="--i:4">React</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <h2 class="section-title">About Me</h2>
+
+      <div class="about-grid">
+        <div class="about-card card always-visible">
+          <h3>Profile</h3>
+          <p><strong>Name:</strong> Akshith Inavolu</p>
+          <p><strong>Email:</strong> <a href="mailto:akshithinavolu@gmail.com">akshithinavolu@gmail.com</a></p>
+          <p><strong>Phone:</strong> +91-7671851228</p>
+
+          <p class="summary">Software Developer skilled in Java, Python, Data Structures, OOP, backend logic, APIs, debugging, clean code, modular design. Built real-time ML & CV apps using OpenCV, Mediapipe, and TensorFlow.</p>
+        </div>
+
+        <div class="about-card card reveal reveal-up">
+          <h3>Technical Strengths</h3>
+
+          <div class="skill-row">
+            <div class="skill">
+              <label>Python</label>
+              <div class="prog" data-value="90"><span></span></div>
+            </div>
+
+            <div class="skill">
+              <label>Java</label>
+              <div class="prog" data-value="85"><span></span></div>
+            </div>
+
+            <div class="skill">
+              <label>Web Dev (HTML/CSS/JS)</label>
+              <div class="prog" data-value="88"><span></span></div>
+            </div>
+
+            <div class="skill">
+              <label>Machine Learning / CV</label>
+              <div class="prog" data-value="80"><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+
+  <div class="skill-card skill-anim">
+    <i class="fas fa-code icon"></i>
+    <h3>Programming</h3>
+    <p>Python, Java, C</p>
+  </div>
+
+  <div class="skill-card skill-anim">
+    <i class="fas fa-laptop-code icon"></i>
+    <h3>Web</h3>
+    <p>HTML, CSS, JS, Bootstrap, React</p>
+  </div>
+
+  <div class="skill-card skill-anim">
+    <i class="fas fa-robot icon"></i>
+    <h3>ML & CV</h3>
+    <p>TensorFlow, OpenCV, NumPy, Pandas</p>
+  </div>
+
+  <div class="skill-card skill-anim">
+    <i class="fas fa-database icon"></i>
+    <h3>Database</h3>
+    <p>MySQL</p>
+  </div>
+
+  <div class="skill-card skill-anim">
+    <i class="fas fa-tools icon"></i>
+    <h3>Tools</h3>
+    <p>Git, GitHub, VS Code, Jupyter, Colab</p>
+  </div>
+
+</div>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card reveal" tabindex="0" data-project="focusface">
+          <figure><img src="https://th.bing.com/th/id/OIP.H5tNY4I9bWyd6n7QzIsVsQHaC8?w=288&h=139&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="FocusFace"></figure>
+          <div class="proj-body">
+            <h3>FocusFace — Real-time Attention Tracking</h3>
+            <p>Real-time attention monitoring using OpenCV, Mediapipe, TensorFlow, MobileNetV2. EAR/MAR, gaze & head pose.</p>
+            <div class="proj-tags"><span>Python</span><span>OpenCV</span><span>Mediapipe</span></div>
+            <div class="proj-actions"><button class="btn ghost open-modal" data-modal="m-focusface">View Project</button></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" tabindex="0" data-project="traffic">
+          <figure><img src="https://th.bing.com/th/id/OIP.ZuDc-4JX1brohJtVSEIj_wHaEL?w=279&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Traffic Sign Recognition"></figure>
+          <div class="proj-body">
+            <h3>Traffic Sign Recognition System</h3>
+            <p>CNN model with TensorFlow/Keras integrated with real-time camera detection.</p>
+            <div class="proj-tags"><span>TensorFlow</span><span>Keras</span><span>OpenCV</span></div>
+            <div class="proj-actions"><button class="btn ghost open-modal" data-modal="m-traffic">View Project</button></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- MODALS -->
+    <div class="modal" id="m-focusface" aria-hidden="true">
+      <div class="modal-panel">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h3>FocusFace — Real-time Attention Tracker</h3>
+        <p><strong>Stack:</strong> Python, OpenCV, Mediapipe, TensorFlow, MobileNetV2</p>
+        <p>Features: facial landmark detection, EAR/MAR, gaze tracking, head pose estimation, multi-modal attention scoring and realtime logging.</p>
+        <div class="modal-links"><a href="#" class="btn primary">View Repo</a></div>
+      </div>
+    </div>
+
+    <div class="modal" id="m-traffic" aria-hidden="true">
+      <div class="modal-panel">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h3>Traffic Sign Recognition System</h3>
+        <p><strong>Stack:</strong> TensorFlow, Keras, OpenCV</p>
+        <p>Real-time sign detection and classification using CNN, preprocessing, and camera feed integration for on-device inference demo.</p>
+        <div class="modal-links"><a href="#" class="btn primary">View Repo</a></div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline-outer">
+        <div class="timeline-progress" id="timelineProgress" aria-hidden="true"></div>
+        <div class="timeline-list">
+          <article class="timeline-entry reveal-left">
+            <div class="t-year">Mar 2024 – May 2024</div>
+            <div class="t-card card">
+              <h4>Frontend Web Developer Intern — Embrizon Technologies</h4>
+              <p>Built responsive pages for TechVolution 2024 with carousels, interactive UI, cross-browser compatibility and performance optimizations.</p>
+              <div class="exp-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section container">
+      <h2 class="section-title">Certifications</h2>
+      <div class="cert-grid">
+        <div class="cert-card reveal-up"><i class="fas fa-certificate"></i><p>IBM AI</p></div>
+        <div class="cert-card reveal-up"><i class="fas fa-chart-line"></i><p>Forage Tata Data Visualization</p></div>
+        <div class="cert-card reveal-up"><i class="fas fa-laptop-code"></i><p>Embrizon Web Dev</p></div>
+        <div class="cert-card reveal-up"><i class="fas fa-android"></i><p>AICTE Android</p></div>
+        <div class="cert-card reveal-up"><i class="fas fa-code"></i><p>Simplilearn JS & HTML</p></div>
+        <div class="cert-card reveal-up"><i class="fas fa-database"></i><p>SQL by GreatLearning</p></div>
+        <div class="cert-card reveal-up"><i class="fab fa-java"></i><p>HackerRank Java</p></div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research" class="section container">
+  <h2 class="section-title">Research & Publications</h2>
+
+  <div class="research card reveal-up">
+    <h3>Explainable AI Models for Process Optimization in Industry 4.0</h3>
+    <p><strong>ICSCSET 2025</strong></p>
+
+    <p class="muted">
+      A short research study focusing on improving industrial automation using
+      Explainable Artificial Intelligence (XAI) techniques to make machine-learning
+      predictions more interpretable and trustworthy.
+    </p>
+  </div>
+</section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container">
+  <h2 class="section-title">Contact</h2>
+
+  <div class="contact-wrapper">
+
+    <!-- CONTACT INFO CARD -->
+    <!-- CONTACT INFO CARD -->
+<div class="contact-info card contact-anim">
+  <h3>Connect With Me</h3>
+
+  <div class="contact-method">
+    <i class="fas fa-envelope"></i>
+    <a href="mailto:akshithinavolu@gmail.com">akshithinavolu@gmail.com</a>
+  </div>
+
+  <div class="contact-method">
+    <i class="fas fa-phone"></i>
+    <a href="tel:+917671851228">+91 76718 51228</a>
+  </div>
+
+  <div class="contact-method">
+    <i class="fab fa-linkedin"></i>
+    <a href="https://linkedin.com/in/akshithinavolu" target="_blank">LinkedIn Profile</a>
+  </div>
+
+  <div class="contact-method">
+    <i class="fab fa-github"></i>
+    <a href="https://github.com/akshithinavolu" target="_blank">GitHub Profile</a>
+  </div>
+
+  <div class="contact-method">
+    <i class="fab fa-whatsapp"></i>
+    <a href="https://wa.me/917671851228" target="_blank">WhatsApp Me</a>
+  </div>
+
+  <div class="contact-method">
+    <i class="fas fa-file-download"></i>
+    <a href="Akshith_Inavolu_Resume.pdf" download>Download Resume</a>
+  </div>
+
+  <div class="contact-method">
+    <i class="fas fa-map-marker-alt"></i>
+    <span>Hyderabad, India</span>
+  </div>
+
+</div>
+
+
+    <!-- SEND MESSAGE FORM -->
+    <form id="contactForm" class="contact-form card contact-anim">
+      <h3>Send a Message</h3>
+
+      <div class="input-group">
+        <input type="text" name="name" required>
+        <label>Your name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" name="email" required>
+        <label>Your email</label>
+      </div>
+
+      <div class="input-group">
+        <textarea name="message" rows="5" required></textarea>
+        <label>Your message</label>
+      </div>
+
+      <button class="btn primary send-btn" type="submit">Send Message</button>
+
+      <p id="formMsg" class="form-msg"></p>
+    </form>
+  </div>
+</section>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <div>© <span id="year"></span> Akshith Inavolu</div>
+        <div class="quick-links"><a href="#projects">Projects</a> • <a href="#contact">Contact</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
